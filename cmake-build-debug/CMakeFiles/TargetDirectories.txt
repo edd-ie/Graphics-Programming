@@ -1,0 +1,3 @@
+X:/Code/C++/OpenGL/cmake-build-debug/CMakeFiles/OpenGL.dir
+X:/Code/C++/OpenGL/cmake-build-debug/CMakeFiles/edit_cache.dir
+X:/Code/C++/OpenGL/cmake-build-debug/CMakeFiles/rebuild_cache.dir
