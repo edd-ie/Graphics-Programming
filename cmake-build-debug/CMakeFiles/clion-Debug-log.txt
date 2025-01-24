@@ -1,21 +1,8 @@
-"C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.3/bin/ninja/win/x64/ninja.exe" -DCMAKE_TOOLCHAIN_FILE=C:\Users\_edd.ie_\.vcpkg-clion\vcpkg\scripts\buildsystems\vcpkg.cmake -G Ninja -S X:\Code\C++\OpenGL -B X:\Code\C++\OpenGL\cmake-build-debug
--- Running vcpkg install
-Detecting compiler hash for triplet x64-windows...
-Compiler found: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.39.33519/bin/Hostx64/x64/cl.exe
-All requested packages are currently installed.
-Total install time: 1.9 us
-glfw3 provides CMake targets:
-
-  # this is heuristically generated, and may not be correct
-  find_package(glfw3 CONFIG REQUIRED)
-  target_link_libraries(main PRIVATE glfw)
-
-glfw3 provides pkg-config modules:
-
-  # A multi-platform library for OpenGL, window and input
-  glfw3
-
--- Running vcpkg install - done
--- Configuring done (4.2s)
--- Generating done (0.0s)
+"C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.3/bin/ninja/win/x64/ninja.exe" -G Ninja -S X:\Code\C++\OpenGL -B X:\Code\C++\OpenGL\cmake-build-debug
+-- Including Win32 support
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Documentation generation requires Doxygen 1.9.8 or later
+-- Found OpenGL: opengl32
+-- Configuring done (0.4s)
+-- Generating done (0.1s)
 -- Build files have been written to: X:/Code/C++/OpenGL/cmake-build-debug
