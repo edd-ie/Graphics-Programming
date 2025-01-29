@@ -24,10 +24,26 @@ bool Window::init(const unsigned int width, const unsigned int height, const std
 
     // Adding OpenGL context to the window
     glfwMakeContextCurrent(mainWindow);
+    glfwSetWindowUserPointer(mainWindow, this);
+
+    //Callback for key events
+    glfwSetKeyCallback(mainWindow, [](GLFWwindow *win, int key,
+        int scancode, int action, int mods) {
+        auto thisWindow = static_cast<Window*>(glfwGetWindowUserPointer(win));
+        thisWindow->handleKeyEvents(key, scancode, action, mods);
+    });
+
+    //On window close event
+    glfwSetWindowCloseCallback(mainWindow, [](GLFWwindow *win) {
+        auto thisWindow = static_cast<Window*>(
+        glfwGetWindowUserPointer(win));
+        thisWindow->handleWindowCloseEvents();
+    });
 
     Logger::log(1, "%s: Window successfully initialized\n", __FUNCTION__);
     return true;
 }
+
 
 void Window::mainLoop() {
     // Enable vertical sync to prevent tearing & flickering
@@ -50,6 +66,32 @@ void Window::mainLoop() {
 
 
     }
+}
+
+void Window::handleKeyEvents(int key, int scancode, int action, int mods) {
+    std::string actionName;
+    switch (action) {
+        case GLFW_PRESS:
+            actionName = "pressed";
+        break;
+        case GLFW_RELEASE:
+            actionName = "released";
+        break;
+        case GLFW_REPEAT:
+            actionName = "repeated";
+        break;
+        default:
+            actionName = "invalid";
+        break;
+    }
+    const char *keyName = glfwGetKeyName(key, 0);
+    Logger::log(1, "%s: key %s (key %i, scancode %i) %s\n",
+    __FUNCTION__, keyName, key, scancode,
+    actionName.c_str());
+}
+
+void Window::handleWindowCloseEvents() {
+    Logger::log(1, "%s: Window got close event... bye!\n", __FUNCTION__);
 }
 
 void Window::cleanup() {

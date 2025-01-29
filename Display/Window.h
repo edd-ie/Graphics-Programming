@@ -12,6 +12,8 @@ class Window {
 public:
     bool init(unsigned int width, unsigned int height, const std::string& title);
     void mainLoop();
+    void handleKeyEvents(int key, int scancode, int action, int mods);
+    void handleWindowCloseEvents();
     void cleanup();
 
 };
