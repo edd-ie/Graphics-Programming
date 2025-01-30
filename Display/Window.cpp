@@ -33,6 +33,13 @@ bool Window::init(const unsigned int width, const unsigned int height, const std
         thisWindow->handleKeyEvents(key, scancode, action, mods);
     });
 
+    //Callback for mouse events
+    glfwSetMouseButtonCallback(mainWindow, [](GLFWwindow *win, int button, int action, int mods) {
+        auto thisWindow = static_cast<Window*>(glfwGetWindowUserPointer(win));
+        thisWindow->handleMouseButtonEvents(button, action,
+        mods);
+    });
+
     //On window close event
     glfwSetWindowCloseCallback(mainWindow, [](GLFWwindow *win) {
         auto thisWindow = static_cast<Window*>(
@@ -85,9 +92,42 @@ void Window::handleKeyEvents(int key, int scancode, int action, int mods) {
         break;
     }
     const char *keyName = glfwGetKeyName(key, 0);
-    Logger::log(1, "%s: key %s (key %i, scancode %i) %s\n",
-    __FUNCTION__, keyName, key, scancode,
-    actionName.c_str());
+    Logger::log(1, "%s: key %s (key %i, scancode %i) %s\n", __FUNCTION__,
+        keyName, key, scancode, actionName.c_str());
+}
+
+void Window::handleMouseButtonEvents(int button, int action, int mods) {
+    std::string actionName;
+    switch (action) {
+        case GLFW_PRESS:
+        actionName = "pressed";
+        break;
+        case GLFW_RELEASE:
+        actionName = "released";
+        break;
+        default:
+        actionName = "invalid";
+        break;
+    }
+
+    std::string mouseButtonName;
+    switch(button) {
+        case GLFW_MOUSE_BUTTON_LEFT:
+            mouseButtonName = "left";
+        break;
+        case GLFW_MOUSE_BUTTON_MIDDLE:
+            mouseButtonName = "middle";
+        break;
+        case GLFW_MOUSE_BUTTON_RIGHT:
+            mouseButtonName = "right";
+        break;
+        default:
+            mouseButtonName = "other";
+        break;
+    }
+
+    Logger::log(1, "%s: %s mouse button (%i) %s\n", __FUNCTION__,
+        mouseButtonName.c_str(), button, actionName.c_str());
 }
 
 void Window::handleWindowCloseEvents() {
