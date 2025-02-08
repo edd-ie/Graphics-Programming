@@ -1,0 +1,3 @@
+/mnt/x/Code/C++/OpenGL/cmake-build-debug/_deps/glfw-subbuild/CMakeFiles/glfw-populate.dir
+/mnt/x/Code/C++/OpenGL/cmake-build-debug/_deps/glfw-subbuild/CMakeFiles/edit_cache.dir
+/mnt/x/Code/C++/OpenGL/cmake-build-debug/_deps/glfw-subbuild/CMakeFiles/rebuild_cache.dir
