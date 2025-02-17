@@ -325,11 +325,18 @@ FETCHCONTENT_QUIET:BOOL=ON
 // for glfw
 FETCHCONTENT_SOURCE_DIR_GLFW:PATH=
 
+//When not empty, overrides where to find pre-populated content
+// for glm
+FETCHCONTENT_SOURCE_DIR_GLM:PATH=
+
 //Enables UPDATE_DISCONNECTED behavior for all content population
 FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of glfw
 FETCHCONTENT_UPDATES_DISCONNECTED_GLFW:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of glm
+FETCHCONTENT_UPDATES_DISCONNECTED_GLM:BOOL=OFF
 
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=C:/Program Files/Git/cmd/git.exe
@@ -380,8 +387,14 @@ OpenGL_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 OpenGL_SOURCE_DIR:STATIC=X:/Code/C++/OpenGL
 
-//The directory containing a CMake configuration file for glfw3.
-glfw3_DIR:PATH=glfw3_DIR-NOTFOUND
+//Value Computed by CMake
+glm_BINARY_DIR:STATIC=X:/Code/C++/OpenGL/cmake-build-debug/_deps/glm-build
+
+//Value Computed by CMake
+glm_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+glm_SOURCE_DIR:STATIC=X:/Code/C++/OpenGL/cmake-build-debug/_deps/glm-src
 
 
 ########################
@@ -520,7 +533,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -26,3 +26,15 @@ X:/Code/C++/OpenGL/cmake-build-debug/_deps/glfw-build/docs/CMakeFiles/list_insta
 X:/Code/C++/OpenGL/cmake-build-debug/_deps/glfw-build/docs/CMakeFiles/install.dir
 X:/Code/C++/OpenGL/cmake-build-debug/_deps/glfw-build/docs/CMakeFiles/install/local.dir
 X:/Code/C++/OpenGL/cmake-build-debug/_deps/glfw-build/docs/CMakeFiles/install/strip.dir
+X:/Code/C++/OpenGL/cmake-build-debug/_deps/glm-build/CMakeFiles/edit_cache.dir
+X:/Code/C++/OpenGL/cmake-build-debug/_deps/glm-build/CMakeFiles/rebuild_cache.dir
+X:/Code/C++/OpenGL/cmake-build-debug/_deps/glm-build/CMakeFiles/list_install_components.dir
+X:/Code/C++/OpenGL/cmake-build-debug/_deps/glm-build/CMakeFiles/install.dir
+X:/Code/C++/OpenGL/cmake-build-debug/_deps/glm-build/CMakeFiles/install/local.dir
+X:/Code/C++/OpenGL/cmake-build-debug/_deps/glm-build/CMakeFiles/install/strip.dir
+X:/Code/C++/OpenGL/cmake-build-debug/_deps/glm-build/glm/CMakeFiles/edit_cache.dir
+X:/Code/C++/OpenGL/cmake-build-debug/_deps/glm-build/glm/CMakeFiles/rebuild_cache.dir
+X:/Code/C++/OpenGL/cmake-build-debug/_deps/glm-build/glm/CMakeFiles/list_install_components.dir
+X:/Code/C++/OpenGL/cmake-build-debug/_deps/glm-build/glm/CMakeFiles/install.dir
+X:/Code/C++/OpenGL/cmake-build-debug/_deps/glm-build/glm/CMakeFiles/install/local.dir
+X:/Code/C++/OpenGL/cmake-build-debug/_deps/glm-build/glm/CMakeFiles/install/strip.dir

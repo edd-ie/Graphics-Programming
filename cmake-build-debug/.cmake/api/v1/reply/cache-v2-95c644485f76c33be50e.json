@@ -1075,7 +1075,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "4"
+			"value" : "6"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1686,6 +1686,18 @@
 			"value" : ""
 		},
 		{
+			"name" : "FETCHCONTENT_SOURCE_DIR_GLM",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "When not empty, overrides where to find pre-populated content for glm"
+				}
+			],
+			"type" : "PATH",
+			"value" : ""
+		},
+		{
 			"name" : "FETCHCONTENT_UPDATES_DISCONNECTED",
 			"properties" : 
 			[
@@ -1704,6 +1716,18 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Enables UPDATE_DISCONNECTED behavior just for population of glfw"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "OFF"
+		},
+		{
+			"name" : "FETCHCONTENT_UPDATES_DISCONNECTED_GLM",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Enables UPDATE_DISCONNECTED behavior just for population of glm"
 				}
 			],
 			"type" : "BOOL",
@@ -1998,16 +2022,40 @@
 			"value" : "C:/Program Files (x86)/OpenGL"
 		},
 		{
-			"name" : "glfw3_DIR",
+			"name" : "glm_BINARY_DIR",
 			"properties" : 
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for glfw3."
+					"value" : "Value Computed by CMake"
 				}
 			],
-			"type" : "PATH",
-			"value" : "glfw3_DIR-NOTFOUND"
+			"type" : "STATIC",
+			"value" : "X:/Code/C++/OpenGL/cmake-build-debug/_deps/glm-build"
+		},
+		{
+			"name" : "glm_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "glm_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "X:/Code/C++/OpenGL/cmake-build-debug/_deps/glm-src"
 		}
 	],
 	"kind" : "cache",
