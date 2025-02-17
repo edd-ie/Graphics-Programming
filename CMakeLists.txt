@@ -29,7 +29,8 @@ add_executable(OpenGL main.cpp
         Display/Window.cpp Display/Window.h
         Display/Logger.h Display/Logger.cpp
         Renderer/MainRenderer.h
-        Renderer/MainRenderer.cpp)
+        Renderer/MainRenderer.cpp
+        Renderer/MainRenderData.h)
 
 set(OpenGL_GL_PREFERENCE GLVND)
 find_package(OpenGL REQUIRED)
