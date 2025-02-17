@@ -8,7 +8,8 @@
 					"build" : ".",
 					"childIndexes" : 
 					[
-						1
+						1,
+						4
 					],
 					"hasInstallRule" : true,
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
@@ -71,6 +72,32 @@
 					"parentIndex" : 1,
 					"projectIndex" : 1,
 					"source" : "cmake-build-debug/_deps/glfw-src/docs"
+				},
+				{
+					"build" : "_deps/glm-build",
+					"childIndexes" : 
+					[
+						5
+					],
+					"jsonFile" : "directory-_deps.glm-build-Debug-f102e2b64d561f2d5d99.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "cmake-build-debug/_deps/glm-src"
+				},
+				{
+					"build" : "_deps/glm-build/glm",
+					"jsonFile" : "directory-_deps.glm-build.glm-Debug-aca91daba61ef8a137d4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 2,
+					"source" : "cmake-build-debug/_deps/glm-src/glm"
 				}
 			],
 			"name" : "Debug",
@@ -79,7 +106,8 @@
 				{
 					"childIndexes" : 
 					[
-						1
+						1,
+						2
 					],
 					"directoryIndexes" : 
 					[
@@ -106,6 +134,15 @@
 						2,
 						3
 					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4,
+						5
+					],
+					"name" : "glm",
+					"parentIndex" : 0
 				}
 			],
 			"targets" : 
@@ -113,7 +150,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "OpenGL::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-OpenGL-Debug-1bf2e1cb992838786a5e.json",
+					"jsonFile" : "target-OpenGL-Debug-0eb7d5639d06fa0e6cd2.json",
 					"name" : "OpenGL",
 					"projectIndex" : 0
 				},
