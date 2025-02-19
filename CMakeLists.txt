@@ -30,7 +30,13 @@ add_executable(OpenGL main.cpp
         Display/Logger.h Display/Logger.cpp
         Renderer/MainRenderer.h
         Renderer/MainRenderer.cpp
-        Renderer/MainRenderData.h)
+        Renderer/MainRenderData.h
+        Renderer/Framebuffer.h
+        Renderer/Framebuffer.cpp
+        Renderer/VertexBuffer.h
+        Renderer/VertexBuffer.cpp
+        Renderer/Texture.h
+        Renderer/Texture.cpp)
 
 set(OpenGL_GL_PREFERENCE GLVND)
 find_package(OpenGL REQUIRED)

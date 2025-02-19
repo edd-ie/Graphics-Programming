@@ -77,6 +77,27 @@ build CMakeFiles/OpenGL.dir/Renderer/MainRenderer.cpp.obj: CXX_COMPILER__OpenGL_
   OBJECT_DIR = CMakeFiles\OpenGL.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGL.dir\Renderer
 
+build CMakeFiles/OpenGL.dir/Renderer/Framebuffer.cpp.obj: CXX_COMPILER__OpenGL_unscanned_Debug X$:/Code/C++/OpenGL/Renderer/Framebuffer.cpp || cmake_object_order_depends_target_OpenGL
+  DEP_FILE = CMakeFiles\OpenGL.dir\Renderer\Framebuffer.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IX:/Code/C++/OpenGL/include -IX:/Code/C++/OpenGL/src -IX:/Code/C++/OpenGL/window -IX:/Code/C++/OpenGL/tools -IX:/Code/C++/OpenGL/opengl -IX:/Code/C++/OpenGL/model -IX:/Code/C++/OpenGL/cmake-build-debug/_deps/glfw-src/include -IX:/Code/C++/OpenGL/cmake-build-debug/_deps/glm-src/glm/..
+  OBJECT_DIR = CMakeFiles\OpenGL.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenGL.dir\Renderer
+
+build CMakeFiles/OpenGL.dir/Renderer/VertexBuffer.cpp.obj: CXX_COMPILER__OpenGL_unscanned_Debug X$:/Code/C++/OpenGL/Renderer/VertexBuffer.cpp || cmake_object_order_depends_target_OpenGL
+  DEP_FILE = CMakeFiles\OpenGL.dir\Renderer\VertexBuffer.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IX:/Code/C++/OpenGL/include -IX:/Code/C++/OpenGL/src -IX:/Code/C++/OpenGL/window -IX:/Code/C++/OpenGL/tools -IX:/Code/C++/OpenGL/opengl -IX:/Code/C++/OpenGL/model -IX:/Code/C++/OpenGL/cmake-build-debug/_deps/glfw-src/include -IX:/Code/C++/OpenGL/cmake-build-debug/_deps/glm-src/glm/..
+  OBJECT_DIR = CMakeFiles\OpenGL.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenGL.dir\Renderer
+
+build CMakeFiles/OpenGL.dir/Renderer/Texture.cpp.obj: CXX_COMPILER__OpenGL_unscanned_Debug X$:/Code/C++/OpenGL/Renderer/Texture.cpp || cmake_object_order_depends_target_OpenGL
+  DEP_FILE = CMakeFiles\OpenGL.dir\Renderer\Texture.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IX:/Code/C++/OpenGL/include -IX:/Code/C++/OpenGL/src -IX:/Code/C++/OpenGL/window -IX:/Code/C++/OpenGL/tools -IX:/Code/C++/OpenGL/opengl -IX:/Code/C++/OpenGL/model -IX:/Code/C++/OpenGL/cmake-build-debug/_deps/glfw-src/include -IX:/Code/C++/OpenGL/cmake-build-debug/_deps/glm-src/glm/..
+  OBJECT_DIR = CMakeFiles\OpenGL.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenGL.dir\Renderer
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target OpenGL
@@ -85,7 +106,7 @@ build CMakeFiles/OpenGL.dir/Renderer/MainRenderer.cpp.obj: CXX_COMPILER__OpenGL_
 #############################################
 # Link the executable OpenGL.exe
 
-build OpenGL.exe: CXX_EXECUTABLE_LINKER__OpenGL_Debug CMakeFiles/OpenGL.dir/main.cpp.obj CMakeFiles/OpenGL.dir/Display/Window.cpp.obj CMakeFiles/OpenGL.dir/Display/Logger.cpp.obj CMakeFiles/OpenGL.dir/Renderer/MainRenderer.cpp.obj | _deps/glfw-build/src/libglfw3.a || _deps/glfw-build/src/libglfw3.a
+build OpenGL.exe: CXX_EXECUTABLE_LINKER__OpenGL_Debug CMakeFiles/OpenGL.dir/main.cpp.obj CMakeFiles/OpenGL.dir/Display/Window.cpp.obj CMakeFiles/OpenGL.dir/Display/Logger.cpp.obj CMakeFiles/OpenGL.dir/Renderer/MainRenderer.cpp.obj CMakeFiles/OpenGL.dir/Renderer/Framebuffer.cpp.obj CMakeFiles/OpenGL.dir/Renderer/VertexBuffer.cpp.obj CMakeFiles/OpenGL.dir/Renderer/Texture.cpp.obj | _deps/glfw-build/src/libglfw3.a || _deps/glfw-build/src/libglfw3.a
   FLAGS = -g
   LINK_LIBRARIES = _deps/glfw-build/src/libglfw3.a  -lopengl32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\OpenGL.dir
