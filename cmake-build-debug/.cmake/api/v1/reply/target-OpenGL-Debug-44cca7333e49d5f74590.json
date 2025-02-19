@@ -35,13 +35,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 42,
+				"line" : 44,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 43,
+				"line" : 45,
 				"parent" : 0
 			}
 		]
@@ -106,7 +106,8 @@
 				4,
 				6,
 				9,
-				11
+				11,
+				13
 			]
 		}
 	],
@@ -165,7 +166,8 @@
 				4,
 				6,
 				9,
-				11
+				11,
+				13
 			]
 		},
 		{
@@ -177,7 +179,8 @@
 				5,
 				7,
 				8,
-				10
+				10,
+				12
 			]
 		}
 	],
@@ -247,6 +250,17 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "Renderer/VertexBuffer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Renderer/Texture.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Renderer/Texture.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

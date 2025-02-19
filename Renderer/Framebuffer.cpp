@@ -23,7 +23,7 @@ bool Framebuffer::init(unsigned int width, unsigned int height) {
     /* handles downscaling (minification) the texture if it is drawn far away */
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
 
-    /* handles upscaling (magnification) the texture if it is drawn close to view */
+    /* handles up-scaling (magnification) the texture if it is drawn close to view */
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 
     /* Handles positive and negative edges of the texture when drawn outside the defined area of the texture */
