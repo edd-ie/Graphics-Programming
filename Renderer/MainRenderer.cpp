@@ -20,7 +20,7 @@ bool MainRenderer::init(unsigned int width, unsigned int height) {
     }
 
     vertexBuffer.init();
-    if (!basicShader.loadShaders( "shader/basic.vert", "shader/basic.frag")) {
+    if (!basicShader.loadShaders( "resource/shaders/basic.v", "resource/shaders/basic.f")) {
         return false;
     }
     return true;
