@@ -1,15 +1,16 @@
 //-----------------------------------------------------------------------------
-// basic.frag by Steve Jones 
-// Copyright (c) 2015-2019 Game Institute. All Rights Reserved.
-//
+// basic.frag by _Edd.ie_
 // Fragment shader
 //-----------------------------------------------------------------------------
-#version 330 core
+#version 460 core
 
-uniform vec4 vertColor;
-out vec4 frag_color;
+in vec2 texCoord;       // Input from the basic.vert
+
+uniform sampler2D Texture;  //2D texture
+
+out vec4 fragColor;     // Four-element vector containing RGBA value
 
 void main()
 {
-    frag_color = vertColor;
+    fragColor = texture(Texture, texCoord);
 }

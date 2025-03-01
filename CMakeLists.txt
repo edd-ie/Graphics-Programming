@@ -36,7 +36,9 @@ add_executable(OpenGL main.cpp
         Renderer/VertexBuffer.h
         Renderer/VertexBuffer.cpp
         Renderer/Texture.h
-        Renderer/Texture.cpp)
+        Renderer/Texture.cpp
+        Renderer/Shader.h
+        Renderer/Shader.cpp)
 
 set(OpenGL_GL_PREFERENCE GLVND)
 find_package(OpenGL REQUIRED)
