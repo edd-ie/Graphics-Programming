@@ -22,6 +22,7 @@ set(CMAKE_CXX_STANDARD 26)
 
 file(GLOB SOURCES
         src/glad.c
+        shaders
 )
 
 
