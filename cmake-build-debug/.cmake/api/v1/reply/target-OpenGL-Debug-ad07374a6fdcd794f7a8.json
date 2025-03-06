@@ -29,19 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 28,
+				"line" : 29,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 44,
+				"line" : 51,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 45,
+				"line" : 52,
 				"parent" : 0
 			}
 		]
@@ -59,11 +59,11 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "X:/Code/C++/OpenGL/include"
+					"path" : "X:/Code/C++/OpenGL/imports/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "X:/Code/C++/OpenGL/src"
+					"path" : "X:/Code/C++/OpenGL/imports/src"
 				},
 				{
 					"backtrace" : 3,
@@ -107,7 +107,57 @@
 				6,
 				9,
 				11,
-				13
+				13,
+				15,
+				17
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fdiagnostics-color=always"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "X:/Code/C++/OpenGL/imports/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "X:/Code/C++/OpenGL/imports/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "X:/Code/C++/OpenGL/window"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "X:/Code/C++/OpenGL/tools"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "X:/Code/C++/OpenGL/opengl"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "X:/Code/C++/OpenGL/model"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "X:/Code/C++/OpenGL/cmake-build-debug/_deps/glfw-src/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "X:/Code/C++/OpenGL/cmake-build-debug/_deps/glm-src/glm/.."
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				18
 			]
 		}
 	],
@@ -167,7 +217,10 @@
 				6,
 				9,
 				11,
-				13
+				13,
+				15,
+				17,
+				18
 			]
 		},
 		{
@@ -180,7 +233,9 @@
 				7,
 				8,
 				10,
-				12
+				12,
+				14,
+				16
 			]
 		}
 	],
@@ -261,6 +316,34 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "Renderer/Texture.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Renderer/Shader.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Renderer/Shader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "resource/Models/Model.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "resource/Models/Model.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "imports/src/glad.c",
 			"sourceGroupIndex" : 0
 		}
 	],
