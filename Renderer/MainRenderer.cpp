@@ -3,26 +3,41 @@
 //
 
 #include "MainRenderer.h"
+#include "../Display/Logger.h"
 
 bool MainRenderer::init(unsigned int width, unsigned int height) {
-    if (!gladLoadGLLoader(reinterpret_cast<GLADloadproc>(glfwGetProcAddress))){
+    Logger::log(1, "Initializing GLAD...\n");
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
+        Logger::log(1, "%s error: failed OpenGL initialization\n", __FUNCTION__);
         return false;
     }
-    if (!GLAD_GL_VERSION_4_6) {
+    Logger::log(1, "Checking OpenGL version...\n");
+    if (!GLAD_GL_VERSION_3_0) {
+        Logger::log(1, "%s error: disputes with OpenGL version\n", __FUNCTION__);
         return false;
     }
 
+    Logger::log(1, "Initializing framebuffer...\n");
     if (!frameBuffer.init(width, height)) {
-        return false;
-    }
-    if (!texture.loadTexture( "textures/crate.png")) {
+        Logger::log(1, "%s error: failed framebuffer initialization\n", __FUNCTION__);
         return false;
     }
 
-    vertexBuffer.init();
-    if (!basicShader.loadShaders( "shader/basic.vert", "shaders/basic.frag")) {
+    Logger::log(1, "Loading texture...\n");
+    if (!texture.loadTexture("../resource/textures/crate.png")) {
+        Logger::log(1, "%s error: failed texture loading\n", __FUNCTION__);
         return false;
     }
+
+    Logger::log(1, "Initializing vertex buffer...\n");
+    vertexBuffer.init();
+    Logger::log(1, "Loading shaders...\n");
+    if (!basicShader.loadShaders("../shaders/basic.vert", "../shaders/basic.frag")) {
+        Logger::log(1, "%s error: failed shader loading\n", __FUNCTION__);
+        return false;
+    }
+
+    Logger::log(1, "Initialization successful!\n");
     return true;
 }
 

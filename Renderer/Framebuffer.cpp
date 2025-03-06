@@ -4,6 +4,7 @@
 
 #include "Framebuffer.h"
 
+
 bool Framebuffer::init(unsigned int width, unsigned int height) {
     bufferWidth = width;
     bufferHeight = height;
@@ -34,7 +35,8 @@ bool Framebuffer::init(unsigned int width, unsigned int height) {
     glBindTexture(GL_TEXTURE_2D, 0);
 
     /* binding the texture as texture attachment zero */
-    glFramebufferTexture(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, colourTexture, 0);
+    glBindFramebuffer(GL_FRAMEBUFFER, buffer);
+    glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, colourTexture, 0);
 
     /* Use of render buffer to create a depth buffer
      * checked to see whether the pixel is closer to the viewer compared to a pixel already in that position

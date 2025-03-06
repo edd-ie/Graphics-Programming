@@ -10,21 +10,21 @@ FetchContent_Declare(
 
 FetchContent_Declare(
         glm
-        GIT_REPOSITORY	https://github.com/g-truc/glm.git
-        GIT_TAG 	bf71a834948186f4097caa076cd2663c69a10e1e #refs/tags/1.0.1
+        GIT_REPOSITORY https://github.com/g-truc/glm.git
+        GIT_TAG bf71a834948186f4097caa076cd2663c69a10e1e # refs/tags/1.0.1
 )
+
 
 FetchContent_MakeAvailable(glfw)
 FetchContent_MakeAvailable(glm)
 
-
 set(CMAKE_CXX_STANDARD 26)
 
 file(GLOB SOURCES
-        src/glad.c
-        shaders
+        imports/src/glad.c
+        .h
+        .cpp
 )
-
 
 add_executable(OpenGL main.cpp
         Display/Window.cpp Display/Window.h
@@ -39,10 +39,14 @@ add_executable(OpenGL main.cpp
         Renderer/Texture.h
         Renderer/Texture.cpp
         Renderer/Shader.h
-        Renderer/Shader.cpp)
+        Renderer/Shader.cpp
+        resource/Models/Model.h
+        resource/Models/Model.cpp
+        ${SOURCES}
+)
 
 set(OpenGL_GL_PREFERENCE GLVND)
 find_package(OpenGL REQUIRED)
 
 target_link_libraries(${PROJECT_NAME} glfw OpenGL::GL glm::glm)
-target_include_directories(${PROJECT_NAME} PUBLIC include src window tools opengl model)
+target_include_directories(${PROJECT_NAME} PUBLIC imports/include imports/src window tools opengl model)

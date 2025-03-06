@@ -6,17 +6,21 @@
 #define MainRENDERER_H
 
 #pragma once
-#include <vector>
-#include <string>
-#include <glm/glm.hpp>
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
 
-#include "Framebuffer.h"
-#include "VertexBuffer.h"
-#include "Texture.h"
-#include "Shader.h"
-#include "MainRenderData.h"
+#include <vector>
+ #include <string>
+
+#include <glad/glad.h>
+ #include <GLFW/glfw3.h>
+
+ #include <glm/glm.hpp>
+
+
+ #include "Framebuffer.h"
+ #include "VertexBuffer.h"
+ #include "Texture.h"
+ #include "Shader.h"
+ #include "MainRenderData.h"
 
 class MainRenderer {
     Shader basicShader{};
